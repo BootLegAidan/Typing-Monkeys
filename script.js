@@ -87,6 +87,7 @@ class Monkey {
 // functions
 function onNewWord(word) {
   vocabList.push(word)
+  document.getElementsByTagName('title')[0].innerText = vocabList[vocabList.length-1]
   vocabList = vocabList.sort((a,b)=>{
     if (a > b) {
       return 1
